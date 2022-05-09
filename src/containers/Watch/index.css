@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'futureFont';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../../font/futuremillennium.regular.ttf');
+}
+
+@font-face {
+    font-family: 'pastFont';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../../font/past.ttf');
+}
+
+@font-face {
+    font-family: 'presentFont';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../../font/present.ttf');
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.pageInner .time,
+.pageInner .resetBtn,
+.pageInner .timezoneDD div,
+.pageInner .datePicker .SingleDatePicker,
+.pageInner .datePicker .SingleDatePicker input {
+    font-family: 'presentFont';
+}
+
+.pageInner.present {
+    background: #b3adad;
+}
+
+.watchInner {
+    width: 400px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.timeBlock {
+    display: flex;
+    justify-content: space-between;
+}
+
+.datePicker {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.datePicker .DateInput {
+    width: unset;
+}
+
+.datePicker .DateInput_input {
+    text-align: center;
+    padding: 11px 0 9px;
+}
+
+.datePicker .SingleDatePicker,
+.datePicker .SingleDatePickerInput {
+    width: 100%;
+}
+
+.datePicker .DateInput_input__focused {
+    border-bottom: unset;
+}
+
+.resetBtn {
+    height: 45px;
+    font-size: 24px;
+}
+
+.resetBtn:hover {
+    cursor: pointer;
+}
+
+.pageInner {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.time {
+    margin: 10px 5px 10px 0;
+    border: 1px solid #dbdbdb;
+    display: flex;
+    padding: 11px 0;
+    width: 100%;
+    background: white;
+    border-radius: 2px;
+    justify-content: center;
+}
+
+.time,
+.resetBtn,
+.timezoneDD,
+.datePicker .DateInput_input {
+    height: 48px;
+    color: #484848;
+    font-size: 20px;
+}
+
+.timezoneDD .css-1s2u09g-control,
+.timezoneDD .css-1pahdxg-control {
+    min-height: 48px;
+}
+
+.timezoneDD .css-1pahdxg-control,
+.timezoneDD .css-1pahdxg-control:hover {
+    border-color: #dbdbdb;
+    box-shadow: 0 0 1px #dbdbdb;
+}
+
+/*past css start*/
+.pageInner.past {
+    background: white;
+}
+
+/*past css end*/
+
+
+/*present css start*/
+.pageInner.past {
+    background: #E3E3E3;
+}
+
+.pageInner.past .time,
+.pageInner.past .resetBtn,
+.pageInner.past .timezoneDD div,
+.pageInner.past .datePicker .SingleDatePicker,
+.pageInner.past .datePicker .SingleDatePicker input {
+    font-family: 'pastFont';
+}
+
+/*present css end*/
+
+/*future css start*/
+.pageInner.future {
+    background: #E3E3E3;
+}
+
+.pageInner.future .time,
+.pageInner.future .datePicker .SingleDatePicker {
+    color: #0ff541;
+    font-family: 'futureFont';
+    border: 1px solid #0ff541;
+    box-shadow: 1px 1px 1px #0ff541;
+    text-shadow: 0 0 1px #0ff541;
+}
+
+.pageInner.future .datePicker .SingleDatePicker input {
+    color: #0ff541;
+    font-family: 'futureFont';
+    text-shadow: 0 0 1px #0ff541;
+}
+
+.pageInner.future .resetBtn {
+    color: #0ff541;
+    font-family: 'futureFont';
+    text-shadow: 0 0 1px #0ff541;
+    border: unset;
+    background: #8548c2;
+}
+
+.pageInner.future .resetBtn:hover {
+    background: rgba(133, 72, 194, 0.7);
+}
+
+.pageInner.future .timezoneDD div {
+    color: #0ff541;
+    font-family: 'futureFont';
+    text-shadow: 0 0 1px #0ff541;
+}
+
+/*future css end*/

@@ -1,0 +1,2 @@
+export const SET_TIME_PERIOD = "SET_TIME_PERIOD";
+
